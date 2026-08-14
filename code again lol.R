@@ -1,4 +1,4 @@
-# TNBC SINGLE-CELL RNA SEQUENCE ANALYSIS - COMPLETE VERSION
+# TNBC SINGLE-CELL RNA SEQUENCE ANALYSIS
 
 # Step 1: Setup and packages
 if (!require("BiocManager", quietly = TRUE)) install.packages("BiocManager")
@@ -18,7 +18,7 @@ for(pkg in packages_needed) {
 }
 
 # Step 2: Set working directory and data loading
-setwd("C:/Users/user/OneDrive/Desktop/me/uni/y4 s2/Research/Seurat Object")
+setwd() #my personal folder 
 
 if(file.exists("SeuratObject_TNBC.rds")) {
     tnbc_obj <- readRDS("SeuratObject_TNBC.rds")
